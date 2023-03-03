@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="ece club,cse club,alliance clubs,eecsit club,eecsit,it club,eee club">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECSIT</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="h-14 w-screen top-0 bg-gradient-to-r from-violet-700 to-white flex justify-between">
+        <div>
+            <a href="./homePage.html" class="w-max h-full px-6 text-2xl font-bold font-sans text-white flex items-center">EECSIT</a>
+        </div>
+        <div class="m-4 flex items-center justify-between space-x-8">
+            <div>
+                <div class="w-10 h-10 cursor-pointer
+                            flex flex-col justify-evenly items-center
+                            md:hidden" onclick="hamburgerMenu();" id="hamburgerButton">
+                    <div class="line bg-black h-1 w-6"></div>
+                    <div class="line bg-black h-1 w-6"></div>
+                    <div class="line bg-black h-1 w-6"></div>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex space-x-8 text-lg font-bold text-purple-700">
+                    <li></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./homePage.html">Home</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./sponsors.html">Sponsors</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./members.html">Members</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="#">Team</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./events.html">Events</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all
+                                dropdown relative inline-block">
+                        <a href="">About</a>
+                        <div class="my-2 p-4 text-sm text-black bg-white w-max rounded-lg
+                                    dropdown-content hidden absolute -left-20 hover:block">
+                            <a href="./aboutEECSIT.html">About EECSIT</a><br>
+                            <a href="./aboutAU.html">About AU objetives of EECSIT</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="items-end hidden md:block">
+                <a href="./login.html" class="bg-purple-900 text-white py-2 px-3 rounded-2xl font-bold hover:scale-110 transition-all">Login / Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden absolute w-full h-[calc(100vh-56px)] bg-gradient-to-b from-white to-violet-500
+                flex-col justify-start
+                text-lg font-bold text-purple-700
+                md:hidden" id="hamburgerMenuArea">
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./homePage.html">Home</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./sponsors.html">Sponsors</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./members.html">Members</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./events.html">Events</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./aboutEECSIT.html">About EECSIT</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./aboutAU.html">About AU objetives of EECSIT</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./login.html">Login / Sign up</a></div>
+    </div>
+    <!-- navbar end -->
+    <div id="scroller" class="m-0 p-0 w-screen h-[calc(100vh-56px)] snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
+        <!-- 1 -->
+        <div class="img">
+            <div class="crossfade">
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+            </div>
+        </div>
+        <div class="center">
+            <div class="title">ALLIANCE UNIVERSITY STUDENT</div>
+            <div class="sub_title">EECSIT CLUB</div>
+            <div class="btns">
+                <button>News</button>
+                <button>Events</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="scroller1" class="m-0 p-0 snap-start w-full h-[calc(100vh-3.5rem)]">
+
+
+
+        <!-- 2 -->
+        <div id="scroller2" class="m-0 p-0 snap-start w-full h-full
+                                    bg-gradient-to-br from-blue-600 via-pink-600 to-purple-600">
+            <div class="m-0 p-0 w-screen h-[calc(100vh-56px)] snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
+                <div class="m-0 p-0 snap-start w-full h-full rounded-3xl">
+                    <div class="p-7 h-20 font-extrabold text-4xl text-center">
+                        Upcoming Events
+                    </div>
+                    <div class="buttons w-screen h-[calc(100%-80px)]">
+                        <div id="mycontainer" class="w-full h-[80%] overflow-y-hidden overflow-hidden
+                                transition-all scroll-smooth">
+                            <div class="mySlides m-0 p-0 h-full w-full">
+                                <div class="w-full h-full flex justify-evenly items-center">
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-white
+                                            transition-all">
+                                        <img src="event1.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-white
+                                            transition-all
+                                            hidden
+                                            md:block">
+                                        <img src="event2.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-white
+                                            transition-all
+                                            hidden
+                                            lg:block">
+                                        <img src="event3.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySlides m-0 p-0 h-full w-full flex items-center justify-evenly">
+                                <div class="w-full h-full flex justify-evenly items-center">
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-violet-600
+                                            transition-all
+                                            hidden
+                                            md:block">
+                                        <img src="event1.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-violet-600
+                                            transition-all
+                                            hidden
+                                            lg:block">
+                                        <img src="event3.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-violet-600
+                                            transition-all">
+                                        <img src="event3.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySlides m-0 p-0 h-full w-full flex items-center justify-evenly">
+                                <div class="w-full h-full flex justify-evenly items-center">
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-violet-600
+                                            transition-all">
+                                        <img src="event2.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-violet-600
+                                            transition-all
+                                            hidden
+                                            md:block">
+                                        <img src="event3.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                    <div class="w-96 h-96 bg-violet-300 rounded-lg p-5
+                                            hover:scale-90 hover:shadow-2xl hover:shadow-violet-600
+                                            transition-all
+                                            hidden
+                                            lg:block">
+                                        <img src="event1.png" alt="" srcset="" class="rounded-lg w-96 h-48">
+                                        <h1 class="text-2xl mt-2 text-violet-900 font-serif">Hackathon</h1>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus ullam ea cumque consequatur. Nemo, totam! Corrupti architecto voluptate nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-screen h-[15%] flex justify-center items-center text-2xl bg-transparent">
+                            <button id="left" class="prev m-3 p-3 bg-gradient-to-br from-white to-purple-500 rounded-2xl hover:sha hover:shadow-black" onclick="plusSlides(-1)">&lt;</button>
+                            <button id="right" class="next m-3 p-3 bg-gradient-to-br from-white to-purple-500 rounded-2xl hover:sha hover:shadow-black" onclick="plusSlides(1)">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div id="scroller3" class=" m-0 p-0 snap-start w-full h-full bg-no-repeat bg-transparent">
+            <div class="w-screen h-full overflow-y-scroll overflow-x-hidden">
+                <div class="py-3 text-center font-extrabold
+                        text-xl
+                        sm:text-2xl
+                        md:text-4xl">
+                    Testimonials
+                </div>
+                <div class="w-screen
+                        flex flex-col items-center
+                        sm:flex-row">
+                    <img class="mx-10 object-cover
+                            w-32
+                            h-32
+                            sm:w-40 sm:h-40
+                            md:w-52 md:h-52
+                            lg:w-72 lg:h-72
+                            rounded-full
+                            md:rounded-l-full md:rounded-r-[100rem]" src="president_female_3.jpg" alt="">
+                    <div class="w-3/4 text-sm
+                            sm:w-40 sm:text-sm
+                            md:w-56 md:text-sm
+                            lg:w-96 lg:text-lg
+                            text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque earum recusandae doloremque? Cupiditate illo expedita exercitationem, adipisci qui voluptate reiciendis! Reiciendis hic incidunt ad.<br><b>~ Anjali</b>
+                    </div>
+                </div>
+                <div class="w-screen
+                        flex flex-col-reverse items-center justify-end
+                        sm:flex-row">
+                    <div class="w-3/4 text-sm
+                            sm:w-40 sm:text-sm
+                            md:w-56 md:text-sm
+                                lg:w-96 lg:text-lg
+                                text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque earum recusandae doloremque? Cupiditate illo expedita exercitationem dolor vitae, quam perspiciatis est, adipisci qui voluptate reiciendis! Reiciendis hic incidunt ad.<br><b>~ Rahul</b>
+                    </div>
+                    <img class="mx-10 object-cover
+                                w-32
+                                h-32
+                                sm:w-40 sm:h-40
+                                md:w-52 md:h-52
+                                lg:w-72 lg:h-72
+                                rounded-full
+                                md:rounded-l-full md:rounded-r-[100rem]" src="president_male.png" alt="">
+                </div>
+            </div>
+            <div class="w-0 h-0
+                    border-violet-500
+                    border-l-[100vw]
+                    border-b-[calc(100vh-56px)] border-b-transparent
+                    relative -top-[100%]
+                    z-[-1]">
+            </div>
+        </div>
+        <!-- 4 -->
+        <div id="scroller4" class="m-0 p-0 snap-start w-full h-full bg-gradient-to-t from-violet-400 to-violet-300">
+            <div class="m-0 p-0 snap-start w-full h-full bg-voilet-100">
+                <!-- Upper Div -->
+                <div class="lg:h-[25%] lg:w-[100%] flex justify-center items-center">
+                    <div>
+                        <div>
+                            <h1 class="font-extrabold text-center sm:2xl md:text-3xl lg:text-5xl ">Get in Touch</h1>
+                        </div>
+                        <div class="">
+                            <p class="pl-2 pt-2 font-bold text-center md:text=xl lg:text-2xl">
+                                Here's how you can reach us
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lower Div -->
+                <div class="  h-[75%] w-[100%]
+                grid place-items-center
+                md:flex md:justify-evenly md:items-center 
+                lg:flex lg:justify-evenly lg:items-center
+                xl:flex xl:justify-evenly xl:items-center
+                2xl:flex 2xl:justify-evenly 2xl:items-center
+                overflow-y-auto">
+                    <!-- card -1 -->
+                    <div class="bg-violet-200 rounded-lg
+                    h-[90%] w-[80%]
+                    transition-all duration-500 hover:bg-gradient-to-b hover:from-green-200 hover:to-green-400
+                    hover:scale-105 hover:shadow-2xl sm:hover:shadow-black
+                    sm:h-[80%] sm:w-[80%] sm:flex sm:justify-evenly sm:items-center
+                    md:h-[85%] md:w-[25%] md:flex md:justify-evenly md:items-center
+                    lg:h-[85%] lg:w-[25%] lg:flex lg:justify-evenly lg:items-centre
+                    xl:h-[85%] xl:w-[25%] xl:flex xl:justify-evenly xl:items-centre">
+                        <div class="h-[100%] w-[100%]">
+                            <div class="mt-2 h-[20%] w-[100%] flex justify-center items-center
+                            sm:flex sm:justify-centre sm:items-center
+                            md:ml-5 md:flex md:justify-start md:items-center">
+                                <img class="pt-1 h-8 w-11 animate-wiggle
+                                sm:h-8 sm:w-11
+                                md:h-8 md:w-11" src="phone.png" alt="">
+                                <h1 class="p-2 font-bold
+                                sm:text-lg
+                                md:text-2xl">Phone</h1>
+                            </div>
+                            <div class="h-[80%] w-[100%] p-7 flex justify-center">
+                                <p class=" text-justify">
+                                    +91-9628461298 <br> +91-7253981269 <br> You can call us during working hours. <br> i.e. <br> 08:40 AM to 04:20 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -2 -->
+                    <div class="bg-violet-200 rounded-lg
+                    h-[90%] w-[80%]
+                    transition-all duration-500 hover:bg-gradient-to-b hover:from-green-200 hover:to-green-400
+                    hover:scale-105 hover:shadow-2xl sm:hover:shadow-black
+                    sm:h-[80%] sm:w-[80%] sm:flex sm:justify-evenly sm:items-center
+                    md:h-[85%] md:w-[25%] md:flex md:justify-evenly md:items-center
+                    lg:h-[85%] lg:w-[25%] lg:flex lg:justify-evenly lg:items-centre
+                    xl:h-[85%] xl:w-[25%] xl:flex xl:justify-evenly xl:items-centre">
+                        <div class="h-[100%] w-[100%]">
+                            <div class="mt-2 h-[20%] w-[100%] flex justify-center items-center
+                            sm:flex sm:justify-center sm:items-center
+                            md:ml-5 md:flex md:justify-start md:items-center">
+                                <img class="pt-1 h-8 w-8 mr-1 animate-bounce
+                                sm:h-8 sm:w-8
+                                md:h-8 md:w-8" src="address.png" alt="">
+                                <h1 class="p-2 font-bold
+                                sm:text-lg
+                                md:text-2xl">Address</h1>
+                            </div>
+                            <div class="h-[80%] w-[100%] p-7 flex justify-center">
+                                <p class=" text-justify">
+                                    Alliance University, Chikkahagade Cross, Chandapura, Anekal Main Road, Anekal, Bangalore, Karnataka 562106
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -3 -->
+                    <div class="bg-violet-200 rounded-lg
+                    h-[90%] w-[80%]
+                    transition-all duration-500 hover:bg-gradient-to-b hover:from-green-200 hover:to-green-400
+                    hover:scale-105 hover:shadow-2xl sm:hover:shadow-black
+                    sm:h-[80%] sm:w-[80%] sm:flex sm:justify-evenly sm:items-center
+                    md:h-[85%] md:w-[25%] md:flex md:justify-evenly md:items-center
+                    lg:h-[85%] lg:w-[25%] lg:flex lg:justify-evenly lg:items-centre
+                    xl:h-[85%] xl:w-[25%] xl:flex xl:justify-evenly xl:items-centre">
+                        <div class="h-[100%] w-[100%]">
+                            <div class="mt-2 h-[20%] w-[100%] flex justify-center items-center
+                            sm:flex sm:justify-centre sm:items-center
+                            md:ml-5 md:flex md:justify-start md:items-center">
+                                <img class="pt-1 h-7 w-11 mr-1 animate-wiggle
+                                sm:h-8 sm:w-12
+                                md:h-8 md:w-12" src="email.png" alt="">
+                                <h1 class="p-2 font-bold
+                                sm:text-lg
+                                md:text-2xl">Email</h1>
+                            </div>
+                            <div class="h-[80%] w-[100%] p-7 flex justify-center">
+                                <p class=" text-justify">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium quam itaque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function hamburgerMenu() {
+        var hamburgerButtonVar = document.getElementById("hamburgerButton");
+        var hamburgerMenuAreaVar = document.getElementById("hamburgerMenuArea");
+        if (hamburgerMenuAreaVar.style.display == "flex") {
+            console.log("if");
+            hamburgerMenuAreaVar.style.display = "none";
+        } else {
+            console.log("else");
+            hamburgerMenuAreaVar.style.display = "flex";
+        }
+    }
+    console.log("Done");
+
+    function to_print() {
+        var scroller = document.getElementById("scroller");
+        var scroller1 = document.getElementById("scroller1");
+        var scroller2 = document.getElementById("scroller2");
+        var scroller3 = document.getElementById("scroller3");
+        var scroller4 = document.getElementById("scroller4");
+        // console.log(scroller.scrollTop);
+        var scroller1rect = scroller1.getBoundingClientRect();
+        var scroller2rect = scroller2.getBoundingClientRect();
+        var scroller3rect = scroller3.getBoundingClientRect();
+        var scroller4rect = scroller4.getBoundingClientRect();
+        const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        console.log(viewportHeight);
+        console.log(viewportWidth);
+        if ((scroller1rect.top >= 0) &&
+            (scroller1rect.bottom <= viewportHeight) &&
+            (scroller1rect.left >= 0) &&
+            (scroller1rect.right <= viewportWidth)) {
+            console.log("1 is in viewport");
+        }
+        if ((scroller2rect.top >= 0) &&
+            (scroller2rect.bottom <= viewportHeight) &&
+            (scroller2rect.left >= 0) &&
+            (scroller2rect.right <= viewportWidth)) {
+            console.log("2 is in viewport");
+        }
+        if ((scroller3rect.top >= 0) &&
+            (scroller3rect.bottom <= viewportHeight) &&
+            (scroller3rect.left >= 0) &&
+            (scroller3rect.right <= viewportWidth)) {
+            console.log("3 is in viewport");
+        }
+        if ((scroller4rect.top >= 0) &&
+            (scroller4rect.bottom <= viewportHeight) &&
+            (scroller4rect.left >= 0) &&
+            (scroller4rect.right <= viewportWidth)) {
+            console.log("4 is in viewport");
+        }
+    }
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        // var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        // for (i = 0; i < dots.length; i++) {
+        //     dots[i].className = dots[i].className.replace(" active", "");
+        // }
+        slides[slideIndex - 1].style.display = "block";
+        // dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>

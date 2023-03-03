@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EECSIT Club</title>
+    <link rel="stylesheet" href="./assets/aboutAU.css">
+    <style>
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-violet-100">
+    <!-- navbar -->
+    <div class="h-14 w-screen top-0 bg-gradient-to-r from-violet-700 to-white flex justify-between">
+        <div>
+            <a href="./homePage.html" class="w-max h-full px-6 text-2xl font-bold font-sans text-white flex items-center">EECSIT Club</a>
+        </div>
+        <div class="m-4 flex items-center justify-between space-x-8">
+            <div>
+                <div class="w-10 h-10 cursor-pointer
+                            flex flex-col justify-evenly items-center
+                            md:hidden"
+                        onclick="hamburgerMenu();" id="hamburgerButton">
+                    <div class="line bg-black h-1 w-6"></div>
+                    <div class="line bg-black h-1 w-6"></div>
+                    <div class="line bg-black h-1 w-6"></div>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex space-x-8 text-lg font-bold text-purple-700">
+                    <li></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./homePage.html">Home</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./sponsors.html">Sponsors</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./members.html">Members</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all"><a href="./events.html">Events</a></li>
+                    <li class="hover:scale-125 hover:text-black transition-all
+                                dropdown relative inline-block">
+                        <a href="">About</a>
+                        <div class="my-2 p-4 text-sm text-black bg-white w-max rounded-lg
+                                    dropdown-content hidden absolute -left-20 hover:block">
+                            <a href="./aboutEECSIT.html">About EECSIT</a><br>
+                            <a href="./aboutAU.html">About AU objetives of EECSIT</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="items-end hidden md:block">
+                <a href="./login.html" class="bg-purple-900 text-white py-2 px-3 rounded-2xl font-bold hover:scale-110 transition-all">Login / Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden absolute w-full h-[calc(100vh-56px)] bg-gradient-to-b from-white to-violet-500
+                flex-col justify-start
+                text-lg font-bold text-purple-700
+                md:hidden" id="hamburgerMenuArea">
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./homePage.html">Home</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./sponsors.html">Sponsors</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./members.html">Members</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./events.html">Events</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./aboutEECSIT.html">About EECSIT</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./aboutAU.html">About AU objetives of EECSIT</a></div>
+        <div class="w-[cacl(100vw-1rem)] my-4 m-4 text-center active:text-black transition-all border-b-2 border-violet-500 rounded-sm"><a href="./login.html">Login / Sign up</a></div>
+    </div>
+    <!-- navbar end -->
+
+    <div class="flex justify-center flex-col ">
+
+        <div class="flex flex-col p-5  justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+
+                <div class="md:text-5xl text-2xl font-serif  p-4">About Alliance University</div>
+                <div class="h-1 w-[80%] rounded-full bg-red-700"></div>
+            </div>
+        </div>
+
+
+        <img src="./assets/au1.jpg" class="float-right mx-10 ">
+        <div class="content m-10">
+            <div class="text text-justify">
+                Alliance University (AU) is a private university in Bengaluru, established in 2010 under the Karnataka
+                Government Act No.34. The university is recognised by the University Grants Commission (UGC), New Delhi.
+                It has academic affiliation from the Institute of Engineering and Technology [IET], UK. The university
+                holds accreditation from prestigious organisations, including International Accreditation Council for
+                Business Education (IACBE), USA.
+                Quaerat dolorum ipsam magni ipsa laborum dicta, id maxime earum at perspiciatis praesentium accusantium
+                molestias placeat deleniti incidunt, sunt quidem maiores. Nihil eveniet enim modi rem? Animi quia totam
+                a asperiores adipisci. Aliquid vitae deleniti atque necessitatibus dolore sint, pariatur sed enim
+                voluptatem. Perspiciatis doloribus vitae, ipsa error delectus voluptates velit aspernatur, assumenda
+                maxime ratione ut officiis. Optio recusandae error numquam ipsa totam sequi deleniti ad minima, tenetur
+                animi itaque at doloremque consequuntur facere eaque voluptas placeat iusto. Temporibus, non, reiciendis
+                odio est fuga amet omnis enim dolorum, quasi dolorem aliquam officia eos! Error, maiores? Natus,
+                officia
+                dignissimos est alias laboriosam illum provident esse adipisci expedita debitis, dolorum sed a eum autem
+                maiores, molestiae rerum! Quia doloribus id consectetur dolorum harum officiis, nostrum esse quas velit
+                nulla repudiandae, laboriosam consequatur vitae molestiae repellendus optio? Qui asperiores voluptates
+                ratione, cumque quis tempora beatae excepturi rem dolor eveniet alias facilis. Odio mollitia labore
+                similique magnam. Earum, repudiandae ullam! Enim, delectus adipisci explicabo velit fuga quae veniam?
+                Sapiente ratione deleniti, odio quibusdam atque officia dolore et, nulla quia doloribus consequatur
+                neque, pariatur molestias alias. Corporis officia voluptatibus accusamus esse, placeat ipsa asperiores
+                repellendus eaque? Dolorem id corporis minima saepe. Culpa tempore eum exercitationem? Et animi nemo at
+                impedit architecto atque consequatur earum magnam fugit rem sint beatae facere repellendus ullam tempora
+                quas quam illo, quae, ducimus error, qui tenetur velit quia similique? Natus porro nam iure doloremque
+                placeat ipsum dolorum, illo, similique optio expedita explicabo fugit rerum tempore consectetur ab
+                deserunt? Delectus voluptatem numquam fugiat eligendi officiis iure repellendus quas, impedit recusandae
+                saepe non alias aperiam sapiente, tempore laudantium br maiores cum quos, sed soluta ipsam iusto quaerat
+                explicabo qui? Commodi rem, delectus aut repellat magni assumenda itaque a explicabo praesentium minus
+                sed, est inventore eveniet iusto accusantium iste tempore, dolorem molestiae doloremque debitis
+                voluptatibus? Magni voluptates ad qui, sunt consequatur dicta, numquam nihil quia, voluptate rem quasi
+                itaque cupiditate molestias illum voluptatum praesentium expedita! Rem fuga vero, consequatur temporibus
+                assumenda non molestias excepturi veritatis placeat mollitia iusto ipsum iure similique est cumque
+                inventore expedita architecto adipisci sit ratione, quidem neque suscipit? Laudantium voluptatibus,
+                placeat consequuntur voluptates dicta consectetur neque nisi nam adipisci, consequatur dolorum, non
+                eveniet voluptatem fugiat repellat similique. Ipsum laborum hic sed perspiciatis voluptatem accusantium
+                velit expedita quas eius provident in dolorum porro accusamus beatae tempora quis, iure cum, distinctio
+                alias, quo nesciunt incidunt veritatis sunt. Enim explicabo labore ratione corrupti. Eum, nisi. Porro
+                commodi nihil expedita, deleniti, reprehenderit consectetur blanditiis ad maiores tenetur mollitia
+                eveniet cupiditate aliquid dolor atque perspiciatis, architecto ullam harum. Perferendis, amet dicta.
+                Laudantium sunt ducimus cumque temporibus, quia accusamus autem reiciendis? Iste hic in ipsum ad atque
+                temporibus iure corrupti vel itaque.
+            </div>
+            <div class="h-1 w-full mt-20 rounded-full bg-gradient-to-r from-red-500 to-red-900 flex justify-between">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+<script>
+    function hamburgerMenu() {
+        var hamburgerButtonVar = document.getElementById("hamburgerButton");
+        var hamburgerMenuAreaVar = document.getElementById("hamburgerMenuArea");
+        if (hamburgerMenuAreaVar.style.display == "flex") {
+            console.log("if");
+            hamburgerMenuAreaVar.style.display = "none";
+        } else {
+            console.log("else");
+            hamburgerMenuAreaVar.style.display = "flex";
+        }
+    }
+</script>
+
+</html>

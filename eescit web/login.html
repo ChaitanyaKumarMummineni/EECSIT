@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login</title>
+  <link rel="stylesheet" href="./assets/login.css">
+</head>
+<body>
+    <div class="h-14 w-screen fixed bg-gradient-to-r from-violet-700 shadow-xl shadow-violet-600">
+        <a href="./homePage.html" class="w-max h-full px-6 text-2xl font-bold font-sans text-white flex items-center">EECSIT Club</a>
+    </div>
+    <div class="m-0 p-0 w-screen h-screen flex items-center justify-evenly bg-gradient-to-r from-violet-500">
+        <div class="m-0 p-0 w-[50vw] h-screen justify-center items-center hidden md:flex">
+            <img src="./assets/Login.png" alt="" class="w-auto h-2/3">
+        </div>
+        <div class="m-5 md:m-0 p-0 h-screen flex justify-center items-center">
+            <div class="m-0 p-0 w-96 h-96 bo rounded-3xl bg-violet-300 shadow-2xl shadow-violet-600">
+                <form action="" class="w-full h-full flex flex-col justify-evenly items-center">
+                    <div class="">
+                        <img src="./assets/email_icon.svg" alt="" class="absolute w-10 p-[3px] rounded-full border-[4px] border-black">
+                        <input type="text" name="e-mail" placeholder="E-mail"
+                        class="h-10 pl-12 w-auto rounded-full focus:scale-110 transition-all duration-300 active:outline-none focus:outline-none"
+                        required>
+                    </div>
+                    <div class="">
+                        <img src="./assets/password_icon.svg" alt="" class="absolute w-10 p-[3px] rounded-full border-[4px] border-black">
+                        <input type="password" name="password" placeholder="Password"
+                        class="h-10 pl-12 w-auto rounded-full focus:scale-110 transition-all duration-300 active:outline-none focus:outline-none"
+                        required>
+                    </div>
+                    <div>
+                        <button type="submit"
+                        class=" rounded-lg bg-violet-700 text-white font-mono font-bold text-xl py-1 px-4
+                                focus:scale-110 transition-all duration-300 hover:scale-110">
+                        Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
